@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.6">
+        <title>patient Dashboard</title>
+
+        <!-- Monserrat Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+outlined"rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/dashboard.css">
+
+    </head>
+    <body>
+        <div class="grid-cntainer">
+            <!-- header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+                <div class="header-left"><span class="material-symbols-outlined">search</span>
+                </div>
+                <div class="header-right">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="material-symbols-outlined">mail</span>
+                    <span class="material-symbols-outlined">account_circle</span>
+                </div>
+            </header>
+            <!-- end header -->
+              
+             
+            <!-- side bar -->
+             <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <span class="material-symbols-outlined">home_health</span>Diabetes Coach
+                    </div>
+                    <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
+                </div>
+                <ul>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">dashboard</span>--> Dashboard
+                    </li>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">edit_note</span>--> Insert Check-ups
+                    </li>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">monitoring</span>-->Diognosis Data
+                    </li>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">description</span>-->Book Appointment
+                    </li>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">notes</span>-->Prescription
+                    </li>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">restaurant</span>--> Diet
+                    </li>
+                    <li class="sidebar-list-item">
+                        <!--<span class="material-symbols-outlined">settings</span>--> Settings
+                    </li>
+                </ul>
+             </aside>
+            <!-- end sidebar --> 
+             
+            <!-- Main -->
+            <main class="main-content">
+                <div class="main-title">
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="main-cards">
+
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h3>Blood Pressure</h3>
+                        </div>
+                        <h1>249</h1>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h3>Glucose level</h3>
+                        </div>
+                        <h1>249</h1>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h3>Weight</h3>
+                        </div>
+                        <h1>249</h1>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h3>Heart Rate</h3>
+                        </div>
+                        <h1>249</h1>
+                    </div>
+
+
+                </div>
+
+                <div class="charts">
+                    
+                    <div class="charts-card">
+                        <h2 class="chart-title">top 5 products</h2>
+                        <div class="bar-chart"></div>
+                    </div>
+
+                    <div class="charts-card">
+                        <h2 class="chart-title">top 5 products</h2>
+                        <div class="area-chart"></div>
+                    </div>
+                
+                </div>
+            </main>
+            <!-- ENd Main -->
+
+        </div>
+        <!-- Scripts -->
+        <!-- Apex charts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.49.1/apexcharts.min.js"></script>
+        <!-- custom js -->
+        <script src="js/script.js"></script>
+        <script src="js/newscript.js"></script>    
+    </body>
+</html>
